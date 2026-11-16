@@ -38,11 +38,21 @@ Future<SharedConversation> fetchDeepSeekShare(String id) async {
     req.headers.set(HttpHeaders.acceptHeader, 'application/json');
     final resp = await req.close();
     final body = await resp.transform(utf8.decoder).join();
+    if (resp.statusCode == 429) {
+      throw '分享接口被限流（HTTP 429），请过一会儿再试';
+    }
     if (resp.statusCode != 200) {
       throw '分享接口返回 HTTP ${resp.statusCode}（链接可能失效或已取消分享）';
     }
     final root = jsonDecode(body);
-    final biz = (root is Map ? root['data'] : null)?['biz_data'];
+    final data = root is Map ? root['data'] : null;
+    final bizCode = (data is Map ? data['biz_code'] : null);
+    final bizMsg = (data is Map ? (data['biz_msg'] ?? '') : '').toString().trim();
+    if (bizCode is num && bizCode.toInt() != 0) {
+      // 分享被删除 / 封禁 / 过期时接口仍返回 200，但 biz_code 非 0
+      throw '分享已失效${bizMsg.isEmpty ? '' : '：$bizMsg'}';
+    }
+    final biz = (data is Map ? data['biz_data'] : null);
     final rawMsgs = (biz is Map ? biz['messages'] : null);
     if (rawMsgs is! List || rawMsgs.isEmpty) throw '这条分享里没有对话内容';
     final title = (biz is Map ? (biz['title'] ?? '') : '').toString();

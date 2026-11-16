@@ -29,6 +29,10 @@
 |---|---|---|
 | ![设置](docs/screenshots/settings.png) | ![关于](docs/screenshots/about.png) | ![来源校验](docs/screenshots/trace.png) |
 
+| DeepSeek 分享链接导入 | 导入后继续对话 |
+|---|---|
+| ![分享导入](docs/screenshots/share_import_ui.png) | ![继续对话](docs/screenshots/share_continue.png) |
+
 ## 构建
 
 ### 环境
@@ -98,7 +102,9 @@ tool/                 开发辅助脚本（聊天记录解析自测）
 ## 开发
 
 ```bash
-dart run tool/parse_file.dart   # 用文件里的聊天记录验证解析器
+dart run tool/parse_file.dart "C:\path\to\对话记录.txt"   # 验证本地聊天记录解析
+dart run tool/check_share.dart https://chat.deepseek.com/share/xxxx   # 验证分享链接解析（真实接口）
+dart run tool/share_to_chats.dart https://chat.deepseek.com/share/xxxx out.json  # 导出成 App 会话，便于复现
 ```
 
 ## 参与贡献
