@@ -1,0 +1,138 @@
+孤猫聊天（gumao_chat）· 软件许可协议
+=====================================
+
+版权所有 (c) 2026 孤猫聊天 contributors
+Copyright (c) 2026 gumao_chat contributors
+
+本项目的源码与二进制以 **PolyForm Noncommercial License 1.0.0** 授权发布，
+完整英文条款见本文件下半部分（具有法律效力）。以下中文说明仅为便于理解，
+如与英文原文冲突，以英文原文为准。
+
+
+一、你可以免费做什么（无需申请）
+
+1. 个人使用：学习、研究、实验、测试、私人娱乐、业余爱好项目；
+2. 非商业组织使用：慈善组织、教育机构、公共研究机构、公共安全 / 卫生机构、
+   环保组织、政府机构（无论经费来源）；
+3. 修改源码、制作衍生作品，并把软件（含修改版）免费分发给他人；
+4. 分发时必须随附本许可条款（或原文链接）以及下面的 Required Notice 行。
+
+
+二、你需要先取得授权才能做什么
+
+任何**商业目的**的使用，包括但不限于：
+
+1. 上架应用商店销售、内购、订阅、内置广告或其他变现；
+2. 作为商业产品或商业服务的一部分集成、分发、托管；
+3. 公司内部用于商业运营（生产环境、对外提供服务等）；
+4. 以收费方式为客户定制、部署、交付基于本项目的软件；
+5. 使用本项目源码训练商业模型或用于商业数据产品。
+
+> 商业授权请联系：<请填写联系邮箱 / 微信>
+> 请在邮件中说明：使用场景、用户规模、是否修改源码、是否需要去除品牌标识。
+
+
+三、其他说明
+
+1. 由于限制商业使用，本许可**不属于 OSI 定义的开源许可证**，
+   本项目属于「源码开放（source-available）」项目。
+2. 本项目使用的第三方依赖（Flutter、path_provider、file_selector 等）
+   仍分别遵循其自身许可，不受本协议影响。
+3. 软件按「现状」提供，不附带任何明示或暗示的担保；因使用本软件产生的
+   任何损失，版权持有人不承担责任。
+4. 本项目不提供任何模型服务，API 费用与第三方服务条款由使用者自行承担。
+
+
+四、来源标识与删除限制
+
+本软件在以下位置包含项目标识与版权声明（即本协议 Notices 一节所说的
+`Required Notice:` 信息）：
+
+1. 每个源码文件头部的版权注释与文件级 Trace 编号（`GMCHAT-…`）；
+2. APK 的 AndroidManifest 中的 `com.gumao.chat.trace` / `com.gumao.chat.license`；
+3. `assets/trace.json` 与隐私政策文本；
+4. 编译进 Dart 常量与隐形水印（含零宽字符）。
+
+依据本协议 **Notices** 一节，你在分发时必须保留上述声明；**删除、隐藏或伪造
+这些标识后再分发，属于超出本许可范围的使用**，需要事先取得书面授权。
+
+如果你怀疑某个应用是由本项目源码删改而来，可用仓库内 `tool/verify_origin.py`
+核对指纹，并向作者提供证据。
+
+
+Required Notice: Copyright (c) 2026 孤猫聊天 contributors
+
+
+====================================================================
+PolyForm Noncommercial License 1.0.0
+<https://polyformproject.org/licenses/noncommercial/1.0.0>
+
+## Acceptance
+
+In order to get any license under these terms, you must agree to them as both strict obligations and conditions to all your licenses.
+
+## Copyright License
+
+The licensor grants you a copyright license for the software to do everything you might do with the software that would otherwise infringe the licensor's copyright in it for any permitted purpose.  However, you may only distribute the software according to [Distribution License](#distribution-license) and make changes or new works based on the software according to [Changes and New Works License](#changes-and-new-works-license).
+
+## Distribution License
+
+The licensor grants you an additional copyright license to distribute copies of the software.  Your license to distribute covers distributing the software with changes and new works permitted by [Changes and New Works License](#changes-and-new-works-license).
+
+## Notices
+
+You must ensure that anyone who gets a copy of any part of the software from you also gets a copy of these terms or the URL for them above, as well as copies of any plain-text lines beginning with `Required Notice:` that the licensor provided with the software.  For example:
+
+> Required Notice: Copyright Yoyodyne, Inc. (http://example.com)
+
+## Changes and New Works License
+
+The licensor grants you an additional copyright license to make changes and new works based on the software for any permitted purpose.
+
+## Patent License
+
+The licensor grants you a patent license for the software that covers patent claims the licensor can license, or becomes able to license, that you would infringe by using the software.
+
+## Noncommercial Purposes
+
+Any noncommercial purpose is a permitted purpose.
+
+## Personal Uses
+
+Personal use for research, experiment, and testing for the benefit of public knowledge, personal study, private entertainment, hobby projects, amateur pursuits, or religious observance, without any anticipated commercial application, is use for a permitted purpose.
+
+## Noncommercial Organizations
+
+Use by any charitable organization, educational institution, public research organization, public safety or health organization, environmental protection organization, or government institution is use for a permitted purpose regardless of the source of funding or obligations resulting from the funding.
+
+## Fair Use
+
+You may have "fair use" rights for the software under the law. These terms do not limit them.
+
+## No Other Rights
+
+These terms do not allow you to sublicense or transfer any of your licenses to anyone else, or prevent the licensor from granting licenses to anyone else.  These terms do not imply any other licenses.
+
+## Patent Defense
+
+If you make any written claim that the software infringes or contributes to infringement of any patent, your patent license for the software granted under these terms ends immediately. If your company makes such a claim, your patent license ends immediately for work on behalf of your company.
+
+## Violations
+
+The first time you are notified in writing that you have violated any of these terms, or done anything with the software not covered by your licenses, your licenses can nonetheless continue if you come into full compliance with these terms, and take practical steps to correct past violations, within 32 days of receiving notice.  Otherwise, all your licenses end immediately.
+
+## No Liability
+
+***As far as the law allows, the software comes as is, without any warranty or condition, and the licensor will not be liable to you for any damages arising out of these terms or the use or nature of the software, under any kind of legal claim.***
+
+## Definitions
+
+The **licensor** is the individual or entity offering these terms, and the **software** is the software the licensor makes available under these terms.
+
+**You** refers to the individual or entity agreeing to these terms.
+
+**Your company** is any legal entity, sole proprietorship, or other kind of organization that you work for, plus all organizations that have control over, are under the control of, or are under common control with that organization.  **Control** means ownership of substantially all the assets of an entity, or the power to direct its management and policies by vote, contract, or otherwise.  Control can be direct or indirect.
+
+**Your licenses** are all the licenses granted to you for the software under these terms.
+
+**Use** means anything you do with the software requiring one of your licenses.

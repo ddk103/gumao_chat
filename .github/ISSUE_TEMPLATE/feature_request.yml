@@ -1,0 +1,28 @@
+name: 功能建议
+description: 想要的新能力或体验改进
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你想解决什么问题？
+      placeholder: 例如：每次换手机都要重新填接口，希望能导入配置。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 你希望的方案
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 备选方案 / 其它应用是怎么做的
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: 范围确认
+      options:
+        - label: 该功能不需要内置任何厂商密钥或代理服务
+          required: true

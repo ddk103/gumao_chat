@@ -1,0 +1,28 @@
+name: gumao_chat
+description: 孤猫聊天 —— 一个源码开放、极简的 AI 对话客户端，支持任意 OpenAI 兼容接口。
+publish_to: 'none'
+
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  path_provider: ^2.1.4
+  file_selector: ^1.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/black_cat.png
+    - assets/privacy_policy.txt
+    - assets/trace.json

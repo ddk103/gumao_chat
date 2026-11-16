@@ -1,0 +1,14 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - tool/**
+    - android/**
+    - ios/**
+    - ohos/**
+
+linter:
+  rules:
+    # 项目沿用小写常量名（如 kPrivacyVersion），不强制 lowerCamelCase
+    constant_identifier_names: false

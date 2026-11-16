@@ -1,0 +1,54 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+**/build/
+
+# Symbolication / obfuscation
+app.*.symbols
+app.*.map.json
+
+# Android local config & build caches
+android/local.properties
+android/.gradle/
+android/.kotlin/
+android/app/debug
+android/app/profile
+android/app/release
+*.jks
+*.keystore
+key.properties
+
+# 运行时数据 / 备份，避免误提交
+cfg.json
+chats.json
+docs.json
+gumao_chat_backup_*.json
+android/app/src/main/assets/
+
+# 开发时产生的临时文件
+analyze.txt

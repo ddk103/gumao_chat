@@ -1,0 +1,11 @@
+{
+  "project": "gumao_chat",
+  "display_name": "孤猫聊天",
+  "trace_id": "GMCHAT-7C41-A9E3-52D8",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "license_url": "https://polyformproject.org/licenses/noncommercial/1.0.0",
+  "source_url": "https://github.com/ddk103/gumao_chat",
+  "watermark": "GMCHAT\u200b\u200d\u200c\u2060-TRACE-7C41-A9E3-52D8\u200b",
+  "copyright": "Copyright (c) 2026 孤猫聊天 contributors",
+  "note": "个人 / 研究 / 非营利免费；商业使用需取得书面授权。本文件与 lib/trace.dart、AndroidManifest 中的标识用于核对来源。"
+}
